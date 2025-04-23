@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Ti, Com Amor 🌻</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      color: #333;
+      min-height: 100vh;
+      background-image: url('https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/OIG1-1-1.jpeg?raw=true'); /* Fundo com mar, girassóis e sol */
+      background-size: cover;
+      background-position: center;
+    }
+    header {
+      background: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 2rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #ff6f61; /* Cor suave para o título */
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #ff9f91; /* Cor suave para a descrição */
+    }
+    .section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .timeline {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .timeline li {
+      position: relative;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .timeline li::before {
+      content: '';
+      position: absolute;
+      left: -1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #ffe066;
+      border: 2px solid #ff6f61;
+    }
+    .timeline li h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #ff6f61;
+    }
+    .timeline li p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .timeline li .date {
+      font-style: italic;
+      color: #ff9f91;
+    }
+    .highlighted {
+      background-color: #ff6f61; /* Cor de fundo para destacar */
+      color: white;
+      font-size: 1.3rem; /* Aumenta o tamanho da fonte */
+      font-weight: bold;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Organiza as imagens em colunas responsivas */
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .gallery img {
+      width: 100%; /* Garante que as imagens ocupem todo o espaço disponível */
+      height: 100%;
+      object-fit: contain; /* Mantém a proporção sem cortar a imagem */
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05); /* Dá um efeito de zoom quando passa o mouse */
+    }
+    .poem {
+      font-style: italic;
+      text-align: center;
+      white-space: pre-wrap;
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #fff3cd;
+      margin-top: 3rem;
+    }
+    audio {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <!-- Música -->
+  <audio autoplay loop>
+    <source src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/Tom%20Rosenthal%20(Edith%20Whiskers)%20-%20Home%20(Lyrics).mp3?raw=true" type="audio/mp3">
+    Seu navegador não suporta a tag de áudio.
+  </audio>
+
+  <header>
+    <h1>Capítulo a Capítulo ✨</h1>
+    <p>Uma história escrita com o coração, para ti.</p>
+  </header>
+
+  <div class="section">
+    <h2>Nossa Linha do Tempo</h2>
+    <ul class="timeline">
+      <li>
+        <h3>Primeiro beijo</h3>
+        <p>Foi no dia 24/07/2023. Um beijo que ficou marcado na nossa história.</p>
+        <p class="date">24/07/2023</p>
+      </li>
+      <li>
+        <h3>Dia de Buggys</h3>
+        <p>A adrenalina foi a nossa companhia nesse dia inesquecível. 17/09/2023.</p>
+        <p class="date">17/09/2023</p>
+      </li>
+      <li>
+        <h3>Natal em Vigo</h3>
+        <p>Nosso primeiro Natal juntos, em 10/12/2023. Um Natal cheio de amor.</p>
+        <p class="date">10/12/2023</p>
+      </li>
+      <li>
+        <h3>Trilho Fisgas de Ermelo</h3>
+        <p>A natureza foi o nosso cenário em 21/04/2024, caminhando juntos no trilho.</p>
+        <p class="date">21/04/2024</p>
+      </li>
+      <li>
+        <h3>Castro Laboreiro</h3>
+        <p>Exploramos o segredo de Castro Laboreiro em 15/08/2024.</p>
+        <p class="date">15/08/2024</p>
+      </li>
+      <li class="highlighted">
+        <h3>Dia oficial de namoro</h3>
+        <p>O nosso amor ganhou o título oficial em 21/09/2024.</p>
+        <p class="date">21/09/2024</p>
+      </li>
+      <li>
+        <h3>Natal na Foresta Encantada</h3>
+        <p>Fomos envoltos pela magia da floresta em 28/12/2024.</p>
+        <p class="date">28/12/2024</p>
+      </li>
+      <li>
+        <h3>Serra da Estrela</h3>
+        <p>Momentos congelantes e quentes de amor em 17/01/2025.</p>
+        <p class="date">17/01/2025</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Nossa Galeria de Momentos 📸</h2>
+    <div class="gallery">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.00%20(1).jpeg?raw=true" alt="Foto 1">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.00%20(11).jpeg?raw=true" alt="Foto 2">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.00%20(2).jpeg?raw=true" alt="Foto 3">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.00%20(3).jpeg?raw=true" alt="Foto 4">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.00%20(4).jpeg?raw=true" alt="Foto 5">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.00%20(5).jpeg?raw=true" alt="Foto 6">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.00%20(6).jpeg?raw=true" alt="Foto 7">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.00%20(7).jpeg?raw=true" alt="Foto 8">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.00%20(8).jpeg?raw=true" alt="Foto 9">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.00%20(9).jpeg?raw=true" alt="Foto 10">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.00.jpeg?raw=true" alt="Foto 11">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.21%20(1).jpeg?raw=true" alt="Foto 12">
+      <img src="https://github.com/luisribeiro03/In-s-e-Lu-s/raw/main/WhatsApp%20Image%202025-04-22%20at%2023.33.22%20(1).jpeg?raw=true" alt="Foto 13">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Poema 🌻🌊☀️</h2>
+    <p class="poem">
+      Entre girassóis dançantes no vento,<br>
+      O teu sorriso é o meu pensamento.<br><br>
+      
+      Como o mar que beija o chão,<br>
+      És calmaria no meu coração.<br><br>
+      
+      E quando o sol beija o dia,<br>
+      Lembro-me da tua alegria.<br><br>
+      
+      Meu amor, minha poesia,<br>
+      És tu a minha melodia.
+    </p>
+  </div>
+
+  <footer>
+    <p>Com amor, para sempre teu. 💛</p>
+    <p>Feito com o sol no coração, os pés na areia e girassóis no pensamento.</p>
+  </footer>
+</body>
+</html>
+
